@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto JavaScript</title>
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+</head>
+
+<body>
+  <img class="logo" src="./imgs/transaction.jpg" alt="aperto de mão">
+
+  <main>
+    <label>
+      Converter <b>De</b>
+      <select class="base-currency">
+        <option value="real">Real Brasileiro</option>
+      </select>
+    </label>
+
+    <label>
+      <b>Para</b>
+      <select class="currency-select">
+        <option value="dolar">💵 Dólar Americano 💲</option>
+        <option value="euro">💶 Euro</option>
+      </select>
+    </label>
+
+    <label>
+      Valor
+      <input class="input-currency" placeholder="10.000">
+    </label>
+
+    <button class="convert-button">CONVERTER</button>
+
+    <section>
+      <div class="currency-box">
+        <img class="currency-img" src="" alt="moeda">
+        <p id="currency-name" class="currency">Real</p>
+        <p class="currency-value-to-convert">R$ 0,00</p>
+        <p class="currency-value">R$ 0,00</p>
+      </div>
+      <p class="conversion-message"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
